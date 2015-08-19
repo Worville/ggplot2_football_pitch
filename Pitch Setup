@@ -1,0 +1,11 @@
+b <- ggplot(test, aes(x,y)) + geom_point() + geom_segment(aes(x = 0, y = 0, xend = 0, yend = 100)) + geom_segment(aes(x = 100, y = 0, xend = 100, yend = 100)) + geom_segment(aes(x = 0, y = 0, xend = 100, yend = 0)) + geom_segment(aes(x = 0, y = 100, xend = 100, yend = 100)) + geom_segment(aes(x=50, y= 0, xend = 50, yend = 100)) + geom_segment(aes(x=0, y=21, xend = 17, yend=21)) + geom_segment(aes(x=17, y=21, xend = 17, yend=79)) + geom_segment(aes(x=0, y=79, xend = 17, yend= 79)) + geom_segment(aes(x=50, y= 0, xend = 50, yend = 100)) + geom_segment(aes(x=5.8, y= 36.8, xend = 0, yend = 36.8)) + geom_segment(aes(x=0, y=63.2, xend = 5.8, yend = 63.2)) + geom_segment(aes(x=5.8, y=36.8, xend = 5.8, yend = 63.2))+ geom_segment(aes(x=83, y=21, xend=100, yend=21.2)) + geom_segment(aes(x=83, y=21, xend=83, yend=79)) + geom_segment(aes(x=83, y=79, xend=100, yend=79))+ geom_segment(aes(x=100, y=36.8, xend=94.2, yend=36.8)) + geom_segment(aes(x=94.2, y=36.8, xend=94.2, yend=63.2)) + geom_segment(aes(x=100, y= 63.2, xend=94.2, yend=63.2)) + geom_point(aes(size= xG))
+
+Copy the above and paste into your console in R or RStudio.
+
+You’ll need to change the name of the text file to test (or change the chosen file in the code above to something different) so that your file recognises the data.
+
+The code takes three different inputs: x, y and xG. 
+
+The pitch layout use the OPTA specific co-ordinates.
+
+Enjoy! 
